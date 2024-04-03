@@ -1,0 +1,193 @@
+*{
+    padding: 1px;
+    margin: 0;
+    box-sizing: border-box;
+}
+.con{
+    display: grid;
+    height: 35px;
+    grid-template-columns: 9% 24% 52% 6%;
+    justify-content: space-between;
+    background-color: lightseagreen;
+}
+header{
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    align-items: center;
+}
+.main{
+    display: flex;
+    justify-content:  space-around;
+    margin-top: 5px;
+}
+.main img{
+    height: 50px;
+    width: 70px;
+    margin-right: auto;
+    
+}
+header div:nth-child(2) h4:nth-child(2) a{
+    color: rgb(4, 87, 87);
+}
+header div:nth-child(2){
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+header div:nth-child(2) h4 a{
+    text-decoration: none;
+    color: black;
+}
+header div:last-child{
+    display: flex;
+    justify-content: center;
+}
+.main input{
+    border-radius: 5px;
+}
+#mon{
+   position: relative;
+   right: 24px;
+   top: 7px;
+   height: 25px;
+   width: 2%;
+}
+#mon1{
+    height: 20px;
+    width: 20px;
+    margin-top: 20px;
+}
+.location{
+    display: flex;
+    background-color: darkgray;
+    height: 40px;
+    align-items: center;
+}
+.location span:nth-child(2){
+    margin: 0px 10px;
+}
+.tit span:nth-child(2){
+    color: rgb(15, 120, 15);
+}
+.items{
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(4, 20%);
+
+}
+.items div{
+    border-radius: 30px;
+    border: 1px solid palegreen;
+}
+.items div img{ 
+    width: 100%;
+    border-radius:40px;
+}
+.items div i{
+    color: orange;
+}
+.items div span{
+    color: green;
+}
+.items div i:last-child{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    color:black;
+    margin-left: 200px ;
+}
+.items2{
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(4, 20%);
+
+}
+.items2 div{
+    border-radius: 30px;
+    border: 1px solid palegreen;
+}
+.items2 div img{ 
+    width: 100%;
+    border-radius:40px;
+}
+.items2 div i{
+    color: orange;
+}
+.items2 div span{
+    color: green;
+}
+.items2 div i:last-child{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    color:black;
+    margin-left: 200px ;
+} 
+.items3{
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(4, 20%);
+
+}
+.items3 div{
+    border-radius: 30px;
+    border: 1px solid palegreen;
+}
+.items3 div img{ 
+    width: 100%;
+    border-radius:40px;
+}
+.items3 div i{
+    color: orange;
+}
+.items3 div span{
+    color: green;
+}
+.items3 div i:last-child{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    color:black;
+    margin-left: 200px ;
+}
+.time{
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;   
+    width: 390px;
+    margin-left: 600px;
+}
+.time span:first-child{
+    background-color:darkcyan;
+} 
+.Roles{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: lightseagreen;
+}
+.Roles div:first-child{
+    display: flex;
+}
+.Roles div:nth-child(2){
+    display: flex;
+}
+.Roles div img{
+    width: 25px;
+}
+.Roles div:last-child button{
+    color:white;
+    background-color: black;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer div span img{
+    width: 25px;
+}
+.Leader{
+    display: flex;
+    justify-content: space-between;
+}
+     

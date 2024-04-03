@@ -1,0 +1,319 @@
+*{
+    padding: 1px;
+    margin: 0;
+    box-sizing: border-box;
+}
+.con{
+    display: grid;
+    height: 35px;
+    grid-template-columns: 9% 24% 52% 6%;
+    justify-content: space-between;
+    background-color: lightseagreen;
+}
+header{
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    align-items: center;
+}
+.main{
+    display: flex;
+    justify-content:  space-around;
+    margin-top: 5px;
+}
+.main img{
+    height: 50px;
+    width: 70px;
+    margin-right: auto;
+    
+}
+header div:nth-child(2){
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+header div:nth-child(2) h4 a{
+    text-decoration: none;
+    color: black;
+}
+header div:last-child{
+    display: flex;
+    justify-content: center;
+}
+.main input{
+    border-radius: 5px;
+}
+#mon{
+   position: relative;
+   right: 24px;
+   top: 7px;
+   height: 25px;
+   width: 2%;
+}
+#mon1{
+    height: 20px;
+    width: 20px;
+    margin-top: 20px;
+    
+}
+.location{
+    display: flex;
+    background-color: darkgray;
+    height: 40px;
+    align-items: center;
+}
+.location span:nth-child(2){
+    margin: 0px 10px;
+}
+.location span:nth-child(3){
+    margin: 0px 10px;
+    
+}
+.location span:nth-child(4){
+    margin: 0px 10px;
+}
+.location span:nth-child(2),.location span:nth-child(4){
+    margin: 0px 10px;
+}
+.details-a{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+    margin-top: 50px;
+ }
+ .details-a div img{
+    width: 100%;
+ }
+ .details-a div:last-child{
+    margin-left: 20px;
+    border-bottom: 0.5px solid gray;
+ }
+ .details-a div h2:first-child{
+    font-family: system-ui;
+    font-size: xx-large;
+ }
+ .details-a>div>span:nth-child(3) {
+    color: rgb(5, 106, 106);
+    font-family: sans-serif;
+}
+.details-a>div div span:first-child{
+    font-size: xx-large;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: rgb(5, 106, 106);
+}
+.details-a>div div span:nth-child(2){
+    margin: 20px;
+    font-size: larger;
+    text-decoration: line-through;
+    font-style: italic;
+    color: #726e6e;
+    font-family: serif;
+}
+.details-a div>span:last-child{
+    font-size: larger;
+    font-family: serif;
+}
+.details-a>div div{
+    margin: 25px 0px;
+    padding: 20px 0px;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+.details-a div p:nth-child(8),.details-a div p:nth-child(9),.details-a div p:nth-child(10){
+    color: #2c2c2c;;
+}
+.details-a div .colors{
+    margin: 30px 0px;
+}
+.details-a div .colors>span{
+    border-radius: 50%;
+    padding: 5px 15px;
+    margin: 5px;
+}
+.details-a div .colors>span:first-child{
+    background-color: orange;
+}
+.details-a div .colors>span:first-child:hover{
+    box-shadow: 0px 0px 5px orange;
+}
+.details-a div .colors>span:nth-child(2){
+    background-color: red;
+}
+.details-a div .colors>span:nth-child(2):hover{
+    box-shadow: 0px 0px 5px red;
+}
+.details-a div .colors>span:nth-child(3){
+    background-color: yellow;
+}
+.details-a div .colors>span:nth-child(3):hover{
+    box-shadow: 0px 0px 5px yellow;
+}
+.details-a div .colors>span:nth-child(4){
+    background-color: pink;
+}
+.details-a div .colors>span:nth-child(4):hover{
+    box-shadow: 0px 0px 5px pink;
+}
+.details-a div .colors>span:nth-child(5){
+    background-color: rgb(66, 142, 76);
+}
+.details-a div .colors>span:nth-child(5):hover{
+    box-shadow: 0px 0px 5px rgb(66, 142, 66);
+}
+.size{
+    margin: 30px 0px;
+}
+.size span{
+    margin: 5px;
+    border: 1px solid;
+    padding: 3px 10px;
+}
+.details-a div input[type=number]{
+    width: 50px;
+    height: 30px;
+    border: 0.5px solid;
+    padding: 2px;
+}
+.details-a div input[type=submit]{
+    width: 90px;
+    height: 35px;
+    border: 0.5px solid;
+    padding: 10px;
+    background-color: rgb(0, 160, 107);
+    border-radius: 3px;
+}
+.details-a div a:last-child{
+    font-size: x-large;
+    margin: 10px;
+    vertical-align: middle;
+    border: 0.5px solid gray;
+    padding: 4px;
+    border-radius: 3px;
+}
+.details-a div a:last-child:hover{
+    text-shadow: 0px 0px 5px red;
+}
+.details-b{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+    margin-top: 15px;
+}
+.details-b div:first-child{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-between;
+}
+.details-b div:first-child img{
+    width: 100%;
+}
+.details-b div:last-child{
+    margin-left: 20px;
+}
+.add-info div:first-child{
+    display: flex;
+}
+.add-info div:first-child a{
+    margin: 20px 30px;
+    text-decoration: none;
+}
+.add-info div:first-child a:first-child{
+    color: green;
+}
+
+.add-info div table{
+    width: 90%;
+    margin: 90px
+}
+.add-info div table tr td{
+    padding: 15px;
+    border: 0.1px solid gray;
+    width: 50%;
+}
+.related{
+    margin: 40px;
+}
+.related>div h2{
+    font-size: xx-large;
+}
+.related>div h2 span{
+    color: green;
+}
+.related-products>div{
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    justify-content: space-evenly;
+    margin: 60px;
+}
+.related-products div div{
+    border: 0.2px solid gray;
+    border-radius: 15px; 
+    padding: 20px;
+    
+}
+.related-products div div img{
+    width: 100%;
+    border-radius: 15px;
+}
+.related-products div div p{
+    color: gray;
+}
+.related-products div div h6{
+    text-decoration: line-through;
+    color: gray;
+    margin: 10px 0px;
+}
+.related-products div div span{
+    margin: 10px 0px;
+    font-family: system-ui;
+    color: darkcyan;
+}
+.related-products div div button{
+    margin: 0px 0px 0px 114px;
+    font-size: medium;
+    border-radius: 60%;
+    padding: 0px 5px;
+    border: none;
+}
+.related-products div div button:hover{
+    background-color: lightgreen;
+    box-shadow: 0px 0px 10px green;
+}
+.related-products div div i{
+    justify-self: end;
+    color: gold;
+    margin: 15px 5px;
+}
+.related-products div div button i{
+    color: black;
+}
+.Roles{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: lightseagreen;
+}
+.Roles div:first-child{
+    display: flex;
+}
+.Roles div:nth-child(2){
+    display: flex;
+}
+.Roles div img{
+    width: 25px;
+}
+.Roles div:last-child button{
+    color:white;
+    background-color: black;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer div span img{
+    width: 25px;
+}
+.Leader{
+    display: flex;
+    justify-content: space-between;
+}

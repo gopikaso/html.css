@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+    <style>
+        element{
+            display: flex;
+            justify-content: center;
+        }
+        div{
+            border-radius: 5px;
+            box-shadow: 2px 3px 10px gray;
+            padding: 20px;
+            text-align: center;
+        }
+        form{
+            width: 250px;
+        }
+        input{
+            border-radius: 5px;
+            margin: 10px;
+            width: 90%;
+            padding: 5px;
+            border: 1px solid black;
+        }
+        span{
+            text-align: center;
+            font-size: x-small;
+            font-weight: 600;
+        }
+        
+    </style>
+</head>
+<body>
+    <element>
+        <div>
+            <form>
+                <input type="text" id="fname" placeholder="First Name"><br>
+                <span id="fnameError"></span><br>
+                <input type="text" id="uname" placeholder="User Name"><br>
+                <span id="unameError"></span><br>
+                <input type="text" id="email" placeholder="Email Address"><br>
+                <span id="emailError"></span><br>
+                <input type="password" id="password" placeholder="password"><br>
+                <span id="pwdError"></span><br>
+                <input type="text" id="telph" placeholder="Telephone Number"><br>
+                <span id="telphError"></span><br>
+                <input type="text" id="pan" placeholder="panCard Number"><br>
+                <span id="panError"></span><br>
+            </form>
+        </div>
+    </element>
+<script>
+//input Error field
+ 
+    var fnameValue=document.getElementById("fname");
+    var fnameError=document.getElementById("fnameError");
+    var unameValue=document.getElementById("uname");
+    var unameError=document.getElementById("unameError");
+    var emailValue=document.getElementById("email");
+    var emailError=document.getElementById("emailError");
+    var pwdValue=document.getElementById("password");
+    var pwdError=document.getElementById("pwdError");
+    var telValue=document.getElementById("telph");
+    var telError=document.getElementById("telphError");
+    var panValue=document.getElementById("pan");
+    var panError=document.getElementById("panError");
+
+//fname validating
+function fnamevalidate(){
+    fname=fnameValue.value;
+        if(fname.length==0){
+            fnameError.innerHTML="First Name Must Be And Contain 4-15 Characters"
+            fnameValue.style.border="2px solid orange"
+            fnameError.style.color='orange'
+            return false
+        }
+        fnameError.innerHTML=""
+        fnameValue.style.border="2px solid green"
+
+        if (!fname.match(/^[A-Z]{1}[a-z]+$/)){
+            fnameError.innerHTML="First Name Must Be And Contain 4-15 characters"
+            fnameError.style.color='orange'
+            fnameValue.style.border="2px solid orange"
+            return false
+        }
+        fnameError.innerHTML=""
+        fnameValue.style.border="2px solid green"
+        return true
+    }
+    fnameValue.addEventListener("keyup",fnamevalidate);
+    fnameValue.addEventListener("blur",fnamevalidate);
+
+//uname validating
+function unamevalidate(){
+    uname=unameValue.value;
+        if(uname.length==0){
+            unameError.innerHTML="UserName Must Be And Contain 5-12 Characters"
+            unameValue.style.border="2px solid orange"
+            unameError.style.color='orange'
+            return false
+        }
+        unameError.innerHTML=""
+        unameValue.style.border="2px solid green"
+
+        if (!uname.match(/^[A-Za-z]{5,12}[a-z0-9]+$/)){
+            unameError.innerHTML="UserName Must Be And Contain 5-12 characters"
+            unameError.style.color='orange'
+            unameValue.style.border="2px solid orange"
+            return false
+        }
+        unameError.innerHTML=""
+        unameValue.style.border="2px solid green"
+        return true
+    }
+    unameValue.addEventListener("keyup",unamevalidate);
+    unameValue.addEventListener("blur",unamevalidate);
+
+//email validating
+function emailvalidate(){
+    eml=emailValue.value;
+        if(eml.length==0){
+            emailError.innerHTML="Email must be a valid address,e.g.go@gopika.com"
+            emailValue.style.border="2px solid orange"
+            emailError.style.color='orange'
+            return false
+        }
+        emailError.innerHTML=""
+        emailValue.style.border="2px solid green"
+
+        if (!eml.match(/^[a-zA-Z0-9]{3,}\@[A-Za-z]+\.[a-z]{2,3}$/)){
+            emailError.innerHTML="Email Must Be And Contain 4-15 characters"
+            emailError.style.color='orange'
+            emailValue.style.border="2px solid orange"
+            return false
+        }
+        emailError.innerHTML=""
+        emailValue.style.border="2px solid green"
+        return true
+    }
+    emailValue.addEventListener("keyup",emailvalidate);
+    emailValue.addEventListener("blur",emailvalidate);
+
+//password validating
+function pwdvalidate(){
+    pwd=pwdValue.value;
+        if(pwd.length==0){
+            pwdError.innerHTML="Password Must Alphnumaric(@,_and-are also allowed and be 8-20 characters)"
+            pwdValue.style.border="2px solid orange"
+            pwdError.style.color='orange'
+            return false
+        }
+        pwdError.innerHTML=""
+        pwdValue.style.border="2px solid green"
+
+        if (!pwd.match(/^[A-Za-z0-9@_-]{8,20}$/)){
+            pwdError.innerHTML="Password Must Alphnumaric(@,_and-are also allowed and be 8-20 characters)"
+            pwdError.style.color='orange'
+            pwdValue.style.border="2px solid orange"
+            return false
+        }
+        pwdError.innerHTML=""
+        pwdValue.style.border="2px solid green"
+        return true
+    }
+    pwdValue.addEventListener("keyup",pwdvalidate);
+    pwdValue.addEventListener("blur",pwdvalidate);
+
+//telephone validating
+function telnumvalidate(){
+    tel=telValue.value;
+        if(tel.length==0){
+            telError.innerHTML="Telephone Must Be A Valid Indian Telephone Number(10 Digits)"
+            telValue.style.border="2px solid orange"
+            telError.style.color='orange'
+            return false
+        }
+        telError.innerHTML=""
+        telValue.style.border="2px solid green"
+
+        if (!tel.match(/^[6-9][0-9]{9}$/)){
+            telError.innerHTML="Telephone Must Be A Valid Indian Telephone Number(10 Digits)"
+            telError.style.color='orange'
+            telValue.style.border="2px solid orange"
+            return false
+        }
+        telError.innerHTML=""
+        telValue.style.border="2px solid green"
+        return true
+    }
+    telValue.addEventListener("keyup",telnumvalidate);
+    telValue.addEventListener("blur",telnumvalidate);
+
+//pan validate
+function panvalidate(){
+    pan=panValue.value;
+        if(pan.length==0){
+            panError.innerHTML="Must Be A Valid Pancard Number"
+            panValue.style.border="2px solid orange"
+            panError.style.color='orange'
+            return false
+        }
+        panError.innerHTML=""
+        panValue.style.border="2px solid green"
+
+        if (!pan.match(/^[A-Z]{5}[0-9]{4}[A-Z]{1}$/)){
+            panError.innerHTML="Must Be A Valid Pancard Number"
+            panError.style.color='orange'
+            panValue.style.border="2px solid orange"
+            return false
+        }
+        panError.innerHTML=""
+        panValue.style.border="2px solid green"
+        return true
+    }
+    panValue.addEventListener("keyup",panvalidate);
+    panValue.addEventListener("blur",panvalidate);
+
+</script>
+</body>
+</html>

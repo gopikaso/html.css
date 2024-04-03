@@ -1,0 +1,270 @@
+*{
+    padding: 1px;
+    margin: 0;
+    box-sizing: border-box;
+}
+.con{
+    display: grid;
+    height: 35px;
+    grid-template-columns: 9% 24% 52% 6%;
+    justify-content: space-between;
+    background-color: lightseagreen;
+}
+header{
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    align-items: center;
+}
+.main{
+    display: flex;
+    justify-content:  space-around;
+    margin-top: 5px;
+}
+.main img{
+    height: 50px;
+    width: 70px;
+    margin-right: auto;
+    
+}
+header div:nth-child(2){
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+header div:nth-child(2) h4 a{
+    text-decoration: none;
+    color: black;
+}
+header div:last-child{
+    display: flex;
+    justify-content: center;
+}
+.main input{
+    border-radius: 5px;
+}
+#mon{
+   position: relative;
+   right: 24px;
+   top: 7px;
+   height: 25px;
+   width: 2%;
+}
+#mon1{
+    height: 20px;
+    width: 20px;
+    margin-top: 20px;
+    
+}
+button {
+        height: 35px;
+        margin: 5px 0px;
+        background-color: lightseagreen;
+        border: none;
+        border-radius: 5px;
+        color: aliceblue;
+        
+    }
+    .content{
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .insertion>div:first-child{
+         display:grid;
+         grid-template-columns: 85% 5% 5%;
+         justify-content: center;
+        
+    }
+    .insertion>div:first-child p{
+        color: green;
+        border-radius: 50%;
+        width: fit-content;
+        padding: 2px 8px;
+    }
+    .insertion>div:first-child p:hover{
+        background-color: aquamarine;
+    }
+    .insertion>div:last-child{
+        display: grid;
+        justify-content: space-evenly;
+        text-align: center;
+        grid-template-columns: repeat(6,13%);
+    }
+    .insertion>div:last-child div{
+        border: 1px solid palegreen;
+        border-radius: 15px;
+        padding: 10px;
+    }
+    .insertion>div:last-child img{
+        border-radius: 15px;
+        width: 100%;
+    }
+    .cart span{
+        justify-content:space-evenly;
+        color:black;
+        background-color:gainsboro;
+        margin: 5px;
+        border-radius: 1%;
+        margin-left: 50px;
+        padding: 5px;
+    }
+    .cart span:hover{
+        background-color: wheat;
+        box-shadow: 0px 0px 10px aqua;
+    }
+    .items{
+        display: grid;
+        justify-content: space-evenly;
+        grid-template-columns: repeat(4, 20%);
+
+    }
+    .items div{
+        border-radius: 30px;
+        border: 1px solid palegreen;
+    }
+    .items div img{ 
+        width: 100%;
+        border-radius:40px;
+    }
+    .items div i{
+        color: orange;
+    }
+    .items div span{
+        color: green;
+    }
+    .items div i:last-child{
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-evenly;
+        color:black;
+        margin-left: 200px ;
+    }
+    .items2{
+        display: grid;
+        justify-content: space-evenly;
+        grid-template-columns: repeat(4, 20%);
+
+    }
+    .items2 div{
+        border-radius: 30px;
+        border: 1px solid palegreen;
+    }
+    .items2 div img{ 
+        width: 100%;
+        border-radius:40px;
+    }
+    .items2 div i{
+        color: orange;
+    }
+    .items2 div span{
+        color: green;
+    }
+    .items2 div i:last-child{
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-evenly;
+        color:black;
+        margin-left: 200px ;
+    }    
+    .deals{
+        display: grid;
+        justify-content: space-evenly;
+        grid-template-columns: repeat(2, 45%);
+    }
+    .deals div:first-child{
+        background-image: url(../images/./deals-1.jpg);
+    }
+    .deals div:first-child h4,.deals div:last-child h4{
+        color: red;
+    }
+    .deals>div:first-child div:nth-child(13) span:nth-child(1),.deals>div:first-child div:nth-child(13) span:nth-child(3),.deals>div:first-child div:nth-child(13) span:nth-child(5),.deals>div:first-child div:nth-child(13) span:nth-child(7){
+        background-color:teal;
+    }
+    .deals>div:last-child div:nth-child(13) span:nth-child(1),.deals>div:last-child div:nth-child(13) span:nth-child(3),.deals>div:last-child div:nth-child(13) span:nth-child(5),.deals>div:last-child div:nth-child(13) span:nth-child(7){
+        background-color:teal;
+    }    
+    .deals div:last-child{
+        background-image: url(../images/./deals-2.png);
+        background-size: cover;
+    }
+    
+    .arrivals{
+        display: grid;
+        justify-content: space-evenly;
+        grid-template-columns: repeat(4, 20%);
+
+    }
+    .arrivals div{
+        border-radius: 30px;
+        border: 1px solid palegreen;
+    }
+    .arrivals div img{ 
+        width: 100%;
+        border-radius:40px;
+    }
+    .arrivals div i{
+        color: orange;
+    }
+    .arrivals div span{
+        color: green;
+    }
+    .arrivals div i:last-child{
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-evenly;
+        color:black;
+        margin-left: 200px ;
+    }
+    .collect{
+        grid-template-columns: repeat(4, 20%);
+        display: grid;
+        justify-content: space-evenly;
+    }
+    .collect div ul li img{
+        width: 25%;
+    }
+    .collect div ul li{
+        display: flex;
+        align-items: center;
+    }
+    .Roles{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: lightseagreen;
+    }
+    .Roles div:first-child{
+        display: flex;
+    }
+    .Roles div:nth-child(2){
+        display: flex;
+    }
+    .Roles div img{
+        width: 25px;
+    }
+    .Roles div:last-child button{
+        background-color: black;
+    }
+    footer{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    footer div span img{
+        width: 25px;
+    }
+    .Leader{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+
+
+    
+    
+
+
+        
+    
+    
+    
+

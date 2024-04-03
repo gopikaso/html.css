@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+</head>
+<body>
+    <form>
+        <label>fname:-</label>
+        <input type="text" name="firstname" id="firstname">
+        <span id="firstNameError"></span>
+    </form>
+    <script>
+        let fName=document.getElementById('fname');
+        let firstNameError=document.getElementById('firstNameError');
+        function namevalidation(){
+            let name=fname.value;
+            if(name.length==0){
+                fNameError.innerHTML="First Name Must Be And Contain 4-15 Characters";
+                fNameValue.style.border="1px solid orange";
+                fNameError.style.color="orange";
+                return false;
+            }
+            if (!name.match(/^[a-z]{3,7}\s[A-Z]+$/)){
+                fNameError.innerHTML="First Name Must Be And Contain 4-15 characters";
+                fNameError.style.color="orange";
+                fNameValue.style.border="1px solid orange";
+                return false;
+            } 
+            fNameError.style.border='1px solid green';
+            firstNameError.style.color='green';
+            return true;   
+        }
+    </script>
+</body>
+</html>

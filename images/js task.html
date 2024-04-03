@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js task</title>
+</head>
+<body>
+    <script>
+        //Square of all even numbers b/w 1 and 10//
+         let sum=0;
+         for(let i=2;i<=10;i+=2){
+            sum=sum+i*i;
+         }
+         console.log(sum);
+        //Vowel Count..//
+        var string = prompt('Enter a string')
+        const vowel = /[aeiou]/gi
+        var add = string.match(vowel)
+        console.log(add.length)
+        
+        //Reverse the words//
+        let name="Achieversit Institute"; 
+        let getname=name.split(" ")
+        console.log(getname.reverse())  
+        console.log(getname.join("  "))  
+
+       //Random Number between 1 and 100//
+       let random=Math.floor(Math.random()*100);
+       document.write(random)
+       console.log(random) 
+       
+       //REmove the duplicate elements//
+       const list=[1,2,3,4,5,6,7,2,'Java','Html','Css','Java'];
+           console.log(list);
+        function removeDuplicates(array){
+            return array.filter((el,index) => array.indexof(el) === index);
+        }
+        console.log(list);
+
+        
+           
+        
+    </script>
+</body>
+</html>

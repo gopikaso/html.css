@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String-JS</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // string literal way
+    let course = 'Java Full Stack';
+    let duration = "6 Months";
+
+    document.write("<h1>"+course+"</h1>");
+
+    // string constructor
+    let place = new String ("online/offline in BTM");
+
+    // string methods
+    console.log(course.indexOf('F'));
+    console.log(course.indexOf('a'));
+    console.log(course.indexOf('S'));
+    console.log(course.indexOf('v'));
+    console.log(course.indexOf('k'));
+
+    console.log(course.lastIndexOf('F'));
+    console.log(course.lastIndexOf('a'));
+    console.log(course.lastIndexOf('S'));
+    console.log(course.lastIndexOf('v'));
+    console.log(course.lastIndexOf('k'));
+
+    console.log(course.charAt('3'));
+    console.log(course.charAt('6'));
+    console.log(course.charAt('8'));
+    console.log(course.charAt('2'));
+    console.log(course.charAt('12'));
+    
+    console.log(course.charCodeAt('3'));
+    console.log(course.charCodeAt('6'));
+    console.log(course.charCodeAt('8'));
+    console.log(course.charCodeAt('2'));
+    console.log(course.charCodeAt('12'));
+
+    console.log(course.substr(1,3));
+    console.log(course.substr(5,8));
+    console.log(course.substr(0,3));
+    console.log(course.substr(10,13));
+    console.log(course.substr(10,14));
+
+    console.log(course.substring(1,3));
+    console.log(course.substring(5,8));
+    console.log(course.substring(0,3));
+    console.log(course.substring(10,13));
+    console.log(course.substring(10,14));
+
+    
+    console.log(course.toUpperCase());
+    
+    
+    console.log(course.toLowerCase());
+    
+</script>
+</html>

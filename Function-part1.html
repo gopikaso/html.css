@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function-part1</title>
+</head>
+<body>
+    <script>
+    // with out parameters //
+        function telugu(){
+            let welcome = "Hello World";
+            console.log(welcome);
+        }
+        telugu();
+
+        function hindi(){
+            let welcome = "KOtha Kota";
+            console.log(welcome);
+        }
+        hindi();
+
+        function english(){
+            let welcome = "1234567";
+            console.log(welcome);
+        }
+        english();
+
+        function maths(){
+            let welcome = "Functions";
+            console.log(welcome);
+        }
+        maths();
+
+        function greet(){
+            let welcome = "Hello Function";
+            console.log(welcome);
+        }
+        greet();
+
+    // with parameters //
+       function add(a,b){
+        let sum=a+b;
+        console.log(sum);
+       }
+       add(10,20)
+
+       function sub(a,b){
+        let sum=a-b;
+        console.log(sum);
+       }
+       sub(10,20)
+
+       function gre(a,b){
+        let sum=a>b;
+        console.log(sum);
+       }
+       gre(10,20)
+
+       function mult(a,b){
+        let sum=a*b;
+        console.log(sum);
+       }
+       mult(10,20)
+    
+       function div(a,b){
+        let sum=a%b;
+        console.log(sum);
+       }
+       div(10,20)
+
+    //default perameters//
+    function gopikagst(totalamount,gst=18){
+        let result=totalamount+(totalamount*gst/100);
+        console.log(result)
+    }
+    gopikagst(1000);
+
+    function sujathagst(totalamount,gst=18){
+        let result=totalamount+(totalamount*gst/10);
+        console.log(result)
+    }
+    sujathagst(100);
+
+    function lakshmigst(totalamount,gst=18){
+        let result=totalamount+(totalamount*gst/100);
+        console.log(result)
+    }
+    lakshmigst(100);
+
+    function parvathigst(totalamount,gst=18){
+        let result=totalamount+(totalamount*gst/20);
+        console.log(result)
+    }
+    parvathigst(10);
+
+    function sarasvathigst(totalamount,gst=18){
+        let result=totalamount+(totalamount*gst/1);
+        console.log(result)
+    }
+    sarasvathigst(100);
+    
+    //return statement//
+    function multiply(a,b=1){
+        return a*b;
+    }
+    console.log(multiply(5, 2));
+
+    function adding(a,b=1){
+        return a+b;
+    }
+    console.log(adding(5, 2));
+    
+    function sub(a,b=1){
+        return a-b;
+    }
+    console.log(sub(5));
+
+    function div(a,b=2){
+        return a%b;
+    }
+    console.log(div(2));
+
+    function less(a,b=1){
+        return a<b;
+    }
+    console.log(multiply(5,12));
+
+    //variable function//
+    const addition=function(a,b){
+        const sum=a+b;
+        console.log(sum);
+    }
+    addition(100,100);
+
+    const subtract=function(a,b){
+        const sum=a-b;
+        console.log(sum);
+    }
+    subtract(100,100);
+
+    const les=function(a,b){
+        const sum=a<=b;
+        console.log(sum);
+    }
+    les(200,100);
+
+    const additions=function(a,b){
+        const sum=a+b;
+        return sum;
+    }
+    let res=additions(100,100);
+    console.log(res);
+
+    const subtracts=function(g,s){
+        const sum=g-s;
+        return(sum);
+    }
+    let ress=subtracts(200,300);
+    console.log(ress);
+
+    //nested function//
+    function welcome(){
+        function greet(){
+            alert("this is parent and child combo");
+        }
+        greet();
+    }
+    welcome();
+
+    function come(){
+        function gree(){
+            alert("parent and child combo");
+        }
+        gree();
+    }
+    come();
+
+    //iifa/iife & self invoking function//
+    (function(){
+        document.write('<h1>Hello World</h1>');
+    })()
+
+
+
+
+
+    
+
+
+    
+
+       
+    </script>
+</body>
+</html>

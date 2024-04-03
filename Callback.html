@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Back</title>
+</head>
+<body>
+    <script>
+        function fetchData(callback){
+            setTimeout(()=>{
+                const data={name:'Gopika',age:20}
+                callback(data)
+            },2000);
+        }
+        function processData(data){
+            console.log('processing Data',data)
+        }
+        fetchData(processData)
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+    <style>
+    Element{
+            display: flex;
+            justify-content: center;
+        }
+        div{
+            border-radius: 10px;
+            box-shadow: 2px 3px 10px gray;
+            padding: 20px;
+            text-align: center;
+        }
+        form{
+            width: 200px;
+        }
+        input{
+            border-radius: 5px;
+            padding: 5px;
+            border: 1px solid black;
+        }
+        span{
+            text-align: center;
+            font-size: x-small;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <Element>
+        <div>
+            <form>
+                <input type="text"name="userName"id="fname"placeholder="First Name"><br><br>
+                <span id="fnameError"></span><br>
+                <input type="text"name="userName"id="uname"placeholder="user Name"><br><br>
+                <span id="unameError"></span><br>
+                <input type="text"name="Email"id="email"placeholder="email"><br><br>
+                <span id="emailError"></span><br>
+                <input type="text"name="Email"id="password"placeholder=" password"><br><br>
+                <span id="passwordError"></span><br>
+                <input type="text"name="Email"id="telph"placeholder="telephone"><br><br>
+                <span id="telphError"></span><br>
+                <input type="text"name="pan"id="pan"placeholder="panCard"><br>
+                <span id="panError"></span><br>
+            </form>
+        </div>
+    </Element>
+<script>
+ 
+    let fnameValue=document.getElementById("fname");
+    let fnameError=document.get.getElementById('fnameError');
+    
+    let unameValue=document.getElementById("uname");
+    let unameError=document.get.getElementById('unameError');
+    
+    let emailValue=document.getElementById("email");
+    let emailError=document.get.getElementById('emailError');
+    
+    let passwordValue=document.getElementById("password");
+    let passwordError=document.get.getElementById('passwordError');
+    
+    let telphValue=document.getElementById("telph");
+    let telphError=document.get.getElementById('telphError');
+    
+    let panValue=document.getElementById("pan");
+    let panError=document.get.getElementById('panError');
+
+
+
+//validating fname
+    function fnamevalidate(){
+        fname=fnameValue.value;
+        if(fname.length==0){
+            fnameError.innerHTML="First Name Must Be And Contain 4-15 Characters"
+            fnameValue.style.border="1px solid orange"
+            fnameError.style.color="orange"
+            return false
+        }
+        fnameError.innerHTML=""
+        fnameValue.style.border="2px solid green"
+
+        if (!fname.match(/^[a-z]{3,7}\s[A-Z]+$/)){
+            fnameError.innerHTML="First Name Must Be And Contain 4-15 characters"
+            fnameError.style.color="orange"
+            fnameValue.style.border="1px solid orange"
+            return false
+        }
+        fnameError.innerHTML=""
+        fnameValue.style.border="2px solid green"
+        return true
+    }
+    fnameValue.addEventListener("keyup",fnamevalidate);
+    fnameValue.addEventListener("blur",fnamevalidate);
+//validating unama
+function unamavalidate(){
+        uname=unamavalue.value;
+        if(uname.length==0){
+            unameError.innerHTML="user Name Must Be And Contain 4-15 Characters"
+            unameValue.style.border="1px solid orange"
+            unameError.style.color="orange"
+            return false
+        }
+        unameError.innerHTML=""
+        unameValue.style.border="2px solid green"
+
+        if (!uname.match(/^[a-z]{3,7}\s[A-Z]+$/)){
+            unameError.innerHTML="user Name Must Be And Contain 4-15 characters"
+            unameError.style.color="orange"
+            unameValue.style.border="1px solid orange"
+            return false
+        }
+        unameError.innerHTML=""
+        unameValue.style.border="2px solid green"
+        return true
+    }
+    unameValue.addEventListener("keyup",unamevalidate);
+    unameValue.addEventListener("blur",unamevalidate);
+
+
+
+
+
+</script>
+    
+</body>
+</html>
